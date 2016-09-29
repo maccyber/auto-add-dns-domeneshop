@@ -2,7 +2,7 @@
 
 ## Install
 ```sh
-npm setup
+npm run setup
 ```
 
 ## Configure
