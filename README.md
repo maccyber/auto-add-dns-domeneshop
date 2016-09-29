@@ -36,6 +36,7 @@ docker run -it --rm --entrypoint sh \
 ```
 
 For update DNS
+```sh
 docker run -it --rm --entrypoint sh \       
   -e ROOT_DOMAIN=t-fk.no \
   -e USERNAME=username@email.com \
@@ -43,3 +44,4 @@ docker run -it --rm --entrypoint sh \
   -e ID=100000 \
   --name auto-add-dns-domeneshop \                    
   maccyber/auto-add-dns-domeneshop -c "/src/cli.js -i 178.62.210.166 -d testdomain"
+```
