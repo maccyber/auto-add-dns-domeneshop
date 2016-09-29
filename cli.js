@@ -3,15 +3,23 @@
 
 const config = require('./config')
 const updateDns = require('./index')
+const login = require('./lib/login')
 
 const arg = [
   ['i', 'ip=ARG', 'ip address to update'],
+  ['l', 'login', 'login'],
   ['d', 'subdomain=ARG', 'sub domain to update'],
   ['h', 'help', 'display this help'],
   ['v', 'version', 'show version']
 ]
 
 let opt = require('node-getopt').create(arg).bindHelp().parseSystem()
+
+if (opt.options.login) {
+  login((err, data) => {
+    console.log(err || data)
+  })
+}
 
 if (opt.options.ip && opt.options.subdomain) {
   const opts = {
