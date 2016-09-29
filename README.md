@@ -1,4 +1,9 @@
 # auto-add-dns-domeneshop
+Since domeneshop doesn't have an API, I created a small script to add subdomains with cli.
+
+# Features
+* Add DNS A-records with default TTL
+* It's fugly - (but works for me)
 
 # 1. Run from host
 
