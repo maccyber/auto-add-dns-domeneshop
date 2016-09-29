@@ -1,0 +1,46 @@
+{
+  "name": "auto-add-dns-domeneshop",
+  "description": "Updates dns records on domeneshop",
+  "version": "1.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.5.0"
+  },
+  "scripts": {
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install",
+    "standard-fix": "standard --fix"
+  },
+  "keywords": [
+    "domeneshop",
+    "dns",
+    "auto dns"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/maccyber/auto-add-dns-domeneshop.git"
+  },
+  "bugs": {
+    "url": "http://github.com/maccyber/auto-add-dns-domeneshop/issues"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.14",
+    "nsp": "2.6.1",
+    "standard": "8.2.0",
+    "tap": "7.1.2"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "node-getopt": "^0.2.3",
+    "request": "^2.75.0",
+    "tough-cookie-filestore": "0.0.1"
+  }
+}
