@@ -29,8 +29,5 @@ ENV URL https://www.domeneshop.no/admin?edit=dns&id=
 ENV USERNAME username@email.com
 ENV PASSWORD password
 
-# Expose 3000
-EXPOSE 3000
-
 # Startup
 ENTRYPOINT sh cli.js
