@@ -4,8 +4,8 @@
 #
 ###########################################################
 
-# Setting the base to nodejs 4
-FROM mhart/alpine-node:4
+# Setting the base to nodejs 6
+FROM mhart/alpine-node:6
 
 # Maintainer
 MAINTAINER Jonas Enge
@@ -30,4 +30,4 @@ ENV USERNAME username@email.com
 ENV PASSWORD password
 
 # Startup
-ENTRYPOINT sh cli.js
+ENTRYPOINT ./cli.js
