@@ -33,4 +33,4 @@ ENV PASSWORD password
 EXPOSE 3000
 
 # Startup
-ENTRYPOINT node index.js
+ENTRYPOINT sh cli.js
