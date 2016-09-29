@@ -24,12 +24,22 @@ Run this to update DNS
 ./cli.js -i 178.62.210.166 -d testdomain
 ```
 # 2. Run from docker
+For help
 ```sh
 docker run -it --rm --entrypoint sh \       
   -e ROOT_DOMAIN=t-fk.no \
   -e USERNAME=username@email.com \
   -e PASSWORD=password \
-  -e ID=100000
+  -e ID=100000 \
   --name auto-add-dns-domeneshop \                    
   maccyber/auto-add-dns-domeneshop -c "/src/cli.js -h"
 ```
+
+For update DNS
+docker run -it --rm --entrypoint sh \       
+  -e ROOT_DOMAIN=t-fk.no \
+  -e USERNAME=username@email.com \
+  -e PASSWORD=password \
+  -e ID=100000 \
+  --name auto-add-dns-domeneshop \                    
+  maccyber/auto-add-dns-domeneshop -c "/src/cli.js -i 178.62.210.166 -d testdomain"
