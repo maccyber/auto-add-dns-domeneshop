@@ -30,4 +30,4 @@ ENV USERNAME username@email.com
 ENV PASSWORD password
 
 # Startup
-ENTRYPOINT ./cli.js
+ENTRYPOINT ["sh", "/src/cli.js"]
