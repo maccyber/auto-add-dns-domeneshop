@@ -29,6 +29,7 @@ docker run -it --rm --entrypoint sh \
   -e ROOT_DOMAIN=t-fk.no \
   -e USERNAME=username@email.com \
   -e PASSWORD=password \
+  -e ID=100000
   --name auto-add-dns-domeneshop \                    
   maccyber/auto-add-dns-domeneshop -c "/src/cli.js -h"
 ```

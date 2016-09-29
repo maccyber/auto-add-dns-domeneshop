@@ -26,6 +26,7 @@ ENV ROOT_DOMAIN t-fk.no
 ENV DOMAIN http://www.domeneshop.no
 ENV LOGIN_URL https://www.domeneshop.no/login
 ENV URL https://www.domeneshop.no/admin?edit=dns&id=
+ENV ID 100000
 ENV USERNAME username@email.com
 ENV PASSWORD password
 
