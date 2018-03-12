@@ -1,4 +1,6 @@
 # auto-add-dns-domeneshop
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/maccyber/auto-add-dns-domeneshop.svg)](https://greenkeeper.io/)
 Since domeneshop doesn't have an API, I created a small script to add subdomains with cli.
 
 # Features
