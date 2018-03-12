@@ -32,10 +32,10 @@
     "url": "http://github.com/maccyber/auto-add-dns-domeneshop/issues"
   },
   "devDependencies": {
-    "coveralls": "2.11.14",
-    "nsp": "2.6.1",
-    "standard": "8.2.0",
-    "tap": "7.1.2"
+    "coveralls": "3.0.0",
+    "nsp": "3.2.1",
+    "standard": "11.0.0",
+    "tap": "11.1.2"
   },
   "dependencies": {
     "cheerio": "^0.22.0",
